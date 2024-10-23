@@ -1,6 +1,5 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import Earth from './Globe';
 
 const Hero = () => {
   return (

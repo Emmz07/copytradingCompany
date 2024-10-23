@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils'
 import Marquee from './page6'
-import Image from 'next/image'
 
 const reviews = [
   {
