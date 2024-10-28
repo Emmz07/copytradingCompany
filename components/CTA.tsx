@@ -9,7 +9,7 @@ const CTA = () => {
         <p className="text-xl mb-8 max-w-2xl mx-auto">
           Join TradewithChun today and experience the power of expert copytrading on Exness. Start maximizing your trading potential now!
         </p>
-        <Button size="lg" variant="secondary" className="bg-blue-400 font-semibold">
+        <Button size="lg" variant="secondary" className="bg-yellow-400 font-semibold"> 
           Start Copytrading Now
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>

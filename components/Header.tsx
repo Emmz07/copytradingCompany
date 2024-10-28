@@ -15,14 +15,14 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-primary">
-              Tradewith<span className='text-blue-400'>Chun</span>
+              Tradewith<span className='text-yellow-300'>Chun</span>
             </Link>
           </div>
           <nav className="hidden md:flex space-x-4">
             <Link href="#features" className="text-foreground hover:text-primary transition-colors">Features</Link>
             <Link href="#testimonials" className="text-foreground hover:text-primary transition-colors">Testimonials</Link>
             <Link href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</Link>
-            <Button className='bg-blue-400 hover:bg-blue-300'>Copy Now</Button>
+            <Button className='bg-yellow-400 hover:bg-yellow-300'>Copy Now</Button>
             <ModeToggle />
           </nav>
           <div className="md:hidden flex items-center">
