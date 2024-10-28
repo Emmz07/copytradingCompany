@@ -1,17 +1,6 @@
 'use client';
 
 import { Card } from '@/components/ui/card';
-import { 
-  AreaChart, 
-  Area, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip,
-  ResponsiveContainer,
-  BarChart,
-  Bar
-} from 'recharts';
 import { ArrowUpRight, TrendingUp, Users, DollarSign } from 'lucide-react';
 
 const performanceData = [
