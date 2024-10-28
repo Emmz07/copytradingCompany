@@ -87,66 +87,6 @@ export default function StatisticsSection() {
             </Card>
           ))}
         </div>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-4">Profit Growth</h3>
-            <div className="h-[300px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={performanceData}>
-                  <defs>
-                    <linearGradient id="profitGradient" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#eab308" stopOpacity={0.2}/>
-                      <stop offset="95%" stopColor="#eab308" stopOpacity={0}/>
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
-                  <XAxis dataKey="month" className="text-muted-foreground" />
-                  <YAxis className="text-muted-foreground" />
-                  <Tooltip 
-                    contentStyle={{ 
-                      backgroundColor: 'hsl(var(--background))',
-                      borderColor: 'hsl(var(--border))',
-                    }}
-                    labelStyle={{ color: 'hsl(var(--foreground))' }}
-                  />
-                  <Area 
-                    type="monotone" 
-                    dataKey="profit" 
-                    stroke="#eab308" 
-                    fillOpacity={1} 
-                    fill="url(#profitGradient)" 
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
-            </div>
-          </Card>
-
-          <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-4">Monthly Returns</h3>
-            <div className="h-[300px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={monthlyReturns}>
-                  <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
-                  <XAxis dataKey="month" className="text-muted-foreground" />
-                  <YAxis className="text-muted-foreground" />
-                  <Tooltip 
-                    contentStyle={{ 
-                      backgroundColor: 'hsl(var(--background))',
-                      borderColor: 'hsl(var(--border))',
-                    }}
-                    labelStyle={{ color: 'hsl(var(--foreground))' }}
-                  />
-                  <Bar 
-                    dataKey="return" 
-                    fill="#eab308" 
-                    radius={[4, 4, 0, 0]}
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </Card>
-        </div>
       </div>
     </section>
   );
